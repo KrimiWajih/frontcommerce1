@@ -3,7 +3,7 @@ import { Link, useLoaderData, useRevalidator } from "react-router-dom";
 import { logout } from "../Api";
 import axios from "axios";
 import { toast } from "react-toastify";
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://ecommerce-v1hm.onrender.com";
 function NavigationBar({cartc}) {
 
   const connectedUser = useLoaderData(); 
