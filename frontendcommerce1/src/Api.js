@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://ecommerce-v1hm.onrender.com";
 export const getProducts = async () => {
   try {
     const response = await axios.get(apiUrl+"/getproducts");
