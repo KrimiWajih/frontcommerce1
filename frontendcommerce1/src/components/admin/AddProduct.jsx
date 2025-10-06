@@ -61,7 +61,7 @@ console.log(imageLinks)
       };
 
      
-      const response = await axios.post("http://localhost:5000/addproduct", productToAdd);
+      const response = await axios.post("https://ecommerce-v1hm.onrender.com/addproduct", productToAdd);
       console.log("Add product response:", response);
 
       if (response.status === 200 || response.status === 201) {
