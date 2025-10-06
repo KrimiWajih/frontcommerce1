@@ -32,7 +32,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/Signin",
+        "https://ecommerce-v1hm.onrender.com/Signin",
         newUser , { withCredentials: true }
       );
       // to get cookies , we need first to change the signin function in backend to instead of token , use cookies ,after installing cookie-parser
@@ -86,7 +86,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/Signup",
+        "https://ecommerce-v1hm.onrender.com/Signup",
         SignupUser
       );
       console.log("Signup response:", response);
