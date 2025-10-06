@@ -3,7 +3,7 @@ import { useLoaderData, useParams, useRevalidator } from "react-router-dom";
 
 import { FaCartPlus } from "react-icons/fa";
 import axios from "axios";
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://ecommerce-v1hm.onrender.com";
 
 
 
