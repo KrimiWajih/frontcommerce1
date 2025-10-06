@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useRevalidator } from "react-router-dom";
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://ecommerce-v1hm.onrender.com";
 function Cart() {
   const [cartstate, setcart] = useState(false);
   const [subtotal, setsubtotal] = useState(0);
