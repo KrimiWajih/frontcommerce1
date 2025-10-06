@@ -1,0 +1,97 @@
+/* Slider.module.css */
+.container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Prevent overflow issues */
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%; /* Ensure it fills the container */
+    position: relative;
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    position: absolute; /* Ensure it fills the parent */
+    top: 0;
+    left: 0;
+  }
+  
+  /* Vertical transparent bar styles for the navigation arrows */
+  .navArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px; /* Narrow bar width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Left side arrow */
+  .navArrowLeft {
+    left: 0;
+  }
+  
+  /* Right side arrow */
+  .navArrowRight {
+    right: 0;
+  }
+  
+  /* Arrow icon styles */
+  .arrowIcon {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects for the vertical arrows */
+  .navArrow:hover {
+    background: rgba(0, 0, 0, 0.4); /* Light black background on hover */
+    transform: scale(1.1); /* Slight scale effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+  }
+  
+  /* Hover effect for arrow icon */
+  .navArrow:hover .arrowIcon {
+    transform: scale(1.2);
+  }
+  
+  /* Active effect */
+  .navArrow:active {
+    transform: scale(0.95); /* Slight shrink on click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Pulse animation for the arrows */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+    }
+  }
+  
+  .navArrow {
+    animation: pulse 2s infinite;
+  }
+  
