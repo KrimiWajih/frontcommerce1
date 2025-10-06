@@ -7,7 +7,7 @@ function Modal({ id, revalidate }) {
 
     const handleDelete = async () => {
         try {
-            const response = await axios.delete(`http://localhost:5000/deleteproduct/${id}`);
+            const response = await axios.delete(`https://ecommerce-v1hm.onrender.com/deleteproduct/${id}`);
             revalidate(); // refresh the loader
             if (response.status === 200) {
                 toast.success("Product deleted");
